@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #eef6fe;
+
+}
+
+.container {
+    width: 1440px;
+    margin: 100px auto;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    min-height: 1000px;
+
+}
+
+.front-pic {
+
+    background-image: url("img/front.png");
+    background-size: cover;
+    width: 53%;
+    float: left;
+    min-height: 1000px;
+    clear: both;
+
+}
+
+.front-reg-form {
+    width: 47%;
+    min-height: 1000px;
+
+    float: left;
+    box-sizing: border-box;
+    padding: 60px 60px 80px 70px;
+    background-color: #fff;
+}
+
+.front-reg-form .h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 55px;
+}
+
+.front-intro span {
+    font-size: 19px;
+    color: #657884;
+    margin-bottom: 60px;
+    display: block;
+}
+
+.front-intro {
+    padding-bottom: 20px;
+}
+
+.social-button {
+    width: 50%;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+
+}
+
+.fb-button {
+    background-color: #255A9B;
+    height: 20px;
+    color: #fff;
+    padding: 10px 0 10px 40px;
+    text-decoration: none;
+    display: block;
+    margin: 0 30px 0 0;
+    position: relative;
+
+}
+
+.fb-button::before {
+    content: url("img/icon-fb.png");
+    position: absolute;
+    top: 6px;
+    left: 9px;
+}
+
+.li-button {
+    background-color: #0076B6;
+    color: #fff;
+    height: 20px;
+    padding: 10px 0 10px 40px;
+    text-decoration: none;
+    display: block;
+    margin: 0 30px 0 0;
+    position: relative;
+}
+
+.li-button::before {
+    content: url("img/icon-in.png");
+    position: absolute;
+    top: 6px;
+    left: 9px;
+}
+
+.hr {
+    display: block;
+    margin: 60px auto 20px;
+    width: 250px;
+    text-align: center;
+
+    height: 50px;
+
+}
+
+.hr::after {
+    content: " ";
+    border-bottom: 2px solid #e4e5e4;
+    display: block;
+}
+
+.hr span {
+    position: relative;
+    display: inline;
+    top: 8px;
+    left: -15px;
+    background-color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #474847;
+}
+
+form {
+
+}
+
+.inputs {
+    min-height: 60px;
+}
+
+.front-form-input {
+    width: 50%;
+    float: left;
+
+    box-sizing: border-box;
+
+}
+
+.front-input {
+    margin: 0 30px 0 0;
+    border: 1px solid #e4e5e4;
+    padding: 5px 10px;
+}
+
+.front-input:hover {
+    border-left-color: #5da1fb;
+}
+
+.input-text {
+    color: #8998a3;
+    font-size: 13px;
+}
+
+.reg-form:focus {
+    outline: none;
+}
+
+input.reg-form {
+    border: none;
+    height: 25px;
+    width: 100%;
+    color: #656665;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.form-question {
+    margin-top: 45px;
+}
+
+.form-question span {
+    color: #8998a3;
+    line-height: 200%;
+    font-size: 15px;
+}
+
+.h3 {
+    color: #294957;
+    font-size: 23px;
+}
+
+
+.form-checks {
+    margin: 60px 0 145px;
+    position: relative;
+}
+
+.form-check {
+    display: inline;
+    margin-right: 40px;
+    font-weight: 500;
+    color: #616261;
+}
+
+.form-check-label::after {
+    content: url("img/icon-i.png");
+    margin-left: 5px;
+
+}
+
+.form-checks-info {
+    position: absolute;
+    color: #b5b6b5;
+    width: 250px;
+    padding: 10px;
+    margin: 20px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.form-agree {
+    color: #b5b6b5;
+    font-size: 13px;
+    margin: 0px 0 60px;
+}
+
+.form-agree a {
+    padding-left: 5px;
+    color: #68b0fa;
+}
+
+
+/*кастомизация radio */
+
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75% 75%;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked) + label::before {
+    border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
+    border-color: #3598fa;
+    background-color: #3598fa;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled + label::before {
+    background-color: #e9ecef;
+}
+
+
+/*кастомизация checkbox*/
+
+.form-agree-checkbox {
+    color: #b5b6b5;
+    margin-right: 10px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-agree-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-agree-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.form-agree-checkbox:checked + label::before {
+    border-color: #3598fa;
+    background-color: #3598fa;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+
+.btn-create {
+    font-size: 15px;
+    line-height: 200%;
+    background-color: #3598fa;
+    color: #fff;
+    border: none;
+    padding: 5px 72px;
+    border-radius: 5px;
+    transition: background .2s;
+}
+
+.btn-create:hover {
+    background: #53a7ea;
+    transition: background .2s;
+}
+
+
+@media (max-width: 1460px) {
+
+    .container {
+        width: 100%;
+        min-height: 1000px;
+    }
+
+    .front-pic {
+        width: 40%;
+    }
+
+    .front-reg-form {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        min-height: 1000px;
+    }
+
+    .front-pic {
+        width: 20%;
+    }
+
+    .front-reg-form {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        min-height: 1000px;
+    }
+
+    .front-pic {
+        display: none;
+    }
+
+    .front-reg-form {
+        width: 100%;
+    }
+
+    .social-button, .front-form-input {
+        width: 300px;
+        max-width: 100%;
+        margin: 20px 0;
+        float: none;
+    }
+
+    .front-reg-form {
+        padding: 5px;
+    }
+
+    .form-checks-info {
+        max-width: 85%;
+    }
+
+    .hr {
+        margin: 20px auto;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+
+
